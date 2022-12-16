@@ -1,0 +1,50 @@
+.parent {
+  position: relative;
+}
+.container {
+  align-items: center;
+  border: 1px solid #c0c4cc;
+  display: flex;
+  gap: 5px;
+  height: 36px;
+  padding: 10px 12px;
+}
+.input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.input::placeholder {
+  color: #898e9a;
+}
+.recommendation {
+  background-color: white;
+  border: 1px solid #898e9a;
+  height: 40vh;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  right: 0;
+  top: 30;
+  z-index: 5;
+}
+.recommendCard {
+  border-bottom: 1px solid #898e9a;
+  cursor: pointer;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 5px 10px;
+}
+.recommendCard:hover {
+  background-color: #898e9a;
+  color: white;
+}
+@media (max-width: 420px) {
+  .container {
+    width: 90vw;
+  }
+}

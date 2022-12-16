@@ -1,0 +1,74 @@
+.portal {
+  background-color: rgba(0, 0, 0, 0.7);
+  bottom: 0;
+  display: grid;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+}
+.modal {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 60vh;
+  padding: 20px 27px;
+  place-self: center;
+  position: relative;
+  width: 45vw;
+  z-index: 15;
+}
+.title {
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.row {
+  display: grid;
+  flex: 1;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  gap: 16px;
+  text-align: justify;
+}
+.closeBtn {
+  border: 2px solid #141e35;
+  cursor: pointer;
+  padding: 5px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+@media (max-width: 420px) {
+  .modal {
+    height: 80vh;
+    width: 100vw;
+  }
+  .image {
+    height: 30vh;
+  }
+  .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

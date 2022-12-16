@@ -1,0 +1,21 @@
+.container {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container span {
+  font-family: "Inter";
+  font-weight: 700;
+}
+
+.container span a {
+    color: blue;
+    text-decoration: none;
+}
